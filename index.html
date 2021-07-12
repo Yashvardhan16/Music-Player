@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Music Player!</h2>
+<div class="music-container" id="music-container">
+    <div>
+<p style="text-align:center"><img class="st" src ="images/2.png"></p>
+</div>
+<audio id="myAudio">
+  <source src="audio/audio1.mp3" >
+  <source src="audio/audio2.mp3" >
+</audio>
+
+</audio>
+<div class="navigation">
+  <button id="prev" class="action-btn" onclick="prevAudio()">
+    <i class="fas fa-backward"></i>
+  </button>
+        <button id="prev" class="action-btn" onclick="pauseAudio()">
+          <i class="fas fa-pause"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big" onclick="playAudio()">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn" onclick="nextAudio()">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+</div>
+  <script src="index.js"></script>
+  </body>
+</html>
